@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "tcc_mba_icmc"
+version = "0.0.1"
+description = "TCC do MBA de ci\u00eancia de dados do ICMC-USP"
+authors = [
+  { name = "Felipe Batista" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+requires-python = "~=3.11.1"
+
+[tool.black]
+line-length = 99
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+)/
+'''
+
+[tool.ruff.lint.isort]
+known_first_party = ["tcc_mba_icmc"]
+force_sort_within_sections = true
