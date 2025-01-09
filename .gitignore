@@ -164,3 +164,11 @@ cython_debug/
 
 #dados
 data/*
+
+/data/
+
+/data/*
+
+data
+
+
