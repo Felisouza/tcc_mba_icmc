@@ -1,0 +1,40 @@
+{
+    "colors": {
+        "dataColors": [
+            "#133141"
+            , "#FB8281"
+            , "#88d499"
+            , "#f58235"
+        ],
+        "dataColorsBadVariation":[
+            "#FBEBE8",
+            "#FBD5D2",
+                        
+            "#FB9796",
+            
+            "#F85657",
+            "#FA6C6B",
+            "#FB8281"
+        ],
+        "dataColorsGoodVariation":[
+            "#7DA7A1",
+            "#669892",
+            
+            "#226B65",
+            
+            "#0B4842",
+            "#0D524B",
+            "#0F5C55"
+        ],
+        "dataColorsPrincipalVariation":[
+            
+            "#edf2f3",
+            "#89d5e6",
+            "#5ea7b5",
+            "#2b6a7d",
+            "#133141"
+        ]
+
+
+    }
+}
