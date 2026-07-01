@@ -31,7 +31,7 @@ def matriz_confusao(y, y_pred, palete, titulo):
 
 def matriz_confusao_porcentagem(y, y_pred, palete, titulo):
     # Calcular a matriz de confusão
-    cm = confusion_matrix(y_test, y_test_pred)
+    cm = confusion_matrix(y, y_pred)
 
     # Convertendo a matriz de confusão para porcentagens
     cm_percentage = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis] * 100
