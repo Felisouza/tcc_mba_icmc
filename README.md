@@ -1,6 +1,8 @@
 # Trabalho de conclusão de curso - MBA em ciência de dados ICMC - USP
 
 ## 📌 Objetivo
+Este projeto foi desenvolvido como **Trabalho de Conclusão de curso (TCC)** do curso de **MBA em Ciência de Dados** do Instituto de Ciências Matemáticas e de Computação (ICMC) da USP.
+
 Este trabalho tem como objetivo aplicar técnicas de **estatística** e **machine learning** em dados de uma corretora de seguros para prever a inadimplência em parcelas de seguros no contexto de negócios entre empresas (**B2B**).  
 
 A análise busca fornecer **insights estratégicos** para gestão de risco, apoio na tomada de decisões comerciais e otimização de operações financeiras.
