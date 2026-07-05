@@ -1,62 +1,70 @@
-# tcc_mba_icmc
+# Trabalho de conclusão de curso - MBA em ciência de dados ICMC - USP
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
+## 📌 Objetivo
+Este trabalho tem como objetivo aplicar técnicas de **estatística** e **machine learning** em dados de uma corretora de seguros para prever a inadimplência em parcelas de seguros no contexto de negócios entre empresas (**B2B**).  
 
-TCC do MBA de ciência de dados do ICMC-USP
+A análise busca fornecer **insights estratégicos** para gestão de risco, apoio na tomada de decisões comerciais e otimização de operações financeiras.
 
-## Project Organization
+---
 
+## Metodologia
+- **Modelos utilizados**:
+  - Regressão Logística
+  - Random Forest
+  - XGBoost  
+
+- **Desafio principal**: desbalanceamento da variável-alvo (inadimplente vs. adimplente).  
+- **Técnicas de balanceamento aplicadas**:
+  - Oversampling (superamostragem)
+  - Undersampling (subamostragem)
+
+---
+
+## Avaliação de Desempenho
+Os modelos foram avaliados com base em:
+- **Recall**
+- **Precisão**
+- **F1-score**
+- **Matriz de confusão**
+
+### Principais resultados:
+- O **XGBoost com oversampling** apresentou o melhor desempenho.
+- Maior capacidade de capturar casos de inadimplência.
+- Redução significativa de **falsos negativos (FN)**.
+- Oversampling mostrou maior robustez e generalização em comparação ao undersampling.
+
+---
+
+## Conclusões
+- O modelo **XGBoost + Oversampling** se destacou como a abordagem mais promissora.  
+- Apesar dos bons resultados, os modelos **não estão prontos para produção**.  
+- O estudo abre caminho para aplicações práticas na **avaliação de inadimplência** e gestão de riscos em corretoras de seguros.
+
+---
+
+## Próximos Passos
+Para aprimorar os resultados, recomenda-se:
+- Testar técnicas avançadas de balanceamento (ex.: **SMOTE**, **ADASYN**).
+- Realizar **fine-tuning de hiperparâmetros**.
+- Incorporar **dados mais informativos** (indicadores financeiros, histórico de pagamentos).
+- Explorar novas arquiteturas e algoritmos.
+
+---
+
+## Estrutura do Projeto
 ```
-├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-│
-├── docs               <- A default mkdocs project; see mkdocs.org for details
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
-│
-├── pyproject.toml     <- Project configuration file with package metadata for tcc_mba_icmc
-│                         and configuration for tools like black
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-├── setup.cfg          <- Configuration file for flake8
-│
-└── tcc_mba_icmc                <- Source code for use in this project.
-    │
-    ├── __init__.py    <- Makes tcc_mba_icmc a Python module
-    │
-    ├── data           <- Scripts to download or generate data
-    │   └── make_dataset.py
-    │
-    ├── features       <- Scripts to turn raw data into features for modeling
-    │   └── build_features.py
-    │
-    ├── models         <- Scripts to train models and then use trained models to make
-    │   │                 predictions
-    │   ├── predict_model.py
-    │   └── train_model.py
-    │
-    └── visualization  <- Scripts to create exploratory and results oriented visualizations
-        └── visualize.py
+├── data/                # Dataset da corretora de seguros
+├── notebooks/           # Jupyter Notebooks com análises e experimentos
+├── models/              # Modelos treinados
+├── reports/             # Relatórios e resultados
+└── README.md            # Documentação do projeto
 ```
 
---------
+---
 
+## Impacto para o Negócio
+Este estudo contribui para:
+- **Mensuração de risco** em operações B2B.
+- **Decisão estratégica** sobre comercialização de produtos.
+- **Gestão de clientes inadimplentes**.
+- **Otimização financeira** e redução de perdas.
